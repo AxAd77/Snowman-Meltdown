@@ -37,6 +37,10 @@ def play_game():
     ):
         guess = input("Guess a letter: ").lower()
 
+        if len(guess) != 1 or not guess.isalpha():
+            print("Please enter a single alphabetical character.")
+            continue
+
         if guess in guessed_letters:
             print("You already guessed that letter.")
             continue
