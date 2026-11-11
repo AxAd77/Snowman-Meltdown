@@ -41,7 +41,7 @@ def play_game():
         while mistakes < len(STAGES) - 1 and not all(
                 letter in guessed_letters for letter in secret_word
         ):
-            guess = input("Guess a letter: ").lower()
+            guess = input("\nGuess a letter: ").lower()
 
             if len(guess) != 1 or not guess.isalpha():
                 print("Please enter a single alphabetical character.")
