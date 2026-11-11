@@ -13,7 +13,9 @@ def get_random_word():
 
 def display_game_state(mistakes, secret_word, guessed_letters):
     """Display the current game state."""
-    print(STAGES[mistakes])
+    print()
+    print("***** Snowman Meltdown *****")
+    print("\t" + STAGES[mistakes])
 
     word_display = " ".join(
         letter if letter in guessed_letters else "_"
